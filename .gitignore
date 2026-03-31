@@ -1,0 +1,77 @@
+Since you didn't specify a package manager, here is the "Gold Standard" .gitignore for a modern Python/FastAPI project. It covers everything from standard virtual environments to newer tools like Poetry and Ruff.
+
+The Essential FastAPI .gitignore
+Ini, TOML
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Environments (Crucial) ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Dependency Managers ---
+# If using Pipenv
+*.pipflow
+# If using Poetry (ignore the virtualenvs, NOT the pyproject.toml/poetry.lock)
+.virtualenvs/
+
+# --- Fast API & Pydantic ---
+.pydantic_ai_cache/
+.pyre/
+
+# --- Testing & Coverage ---
+.target/
+.pytest_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+htmlcov/
+.hypothesis/
+
+# --- Linting & Typing ---
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.ruff_cache/
+.typeguard_cache/
+
+# --- Databases (SQLite / Local Data) ---
+*.db
+*.sqlite3
+/data/
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
