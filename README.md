@@ -1,7 +1,7 @@
 
 ## Scaffolding
 
-From scratach
+From scratch
 
 ## Start service
 ```bash
