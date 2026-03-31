@@ -1,0 +1,67 @@
+When building a Python and FastAPI project, your .gitignore should focus on three main things: hiding your virtual environment, skipping compiled Python bytecode, and keeping your secrets (like .env files) out of your repository.
+
+Here is a standard, robust .gitignore for your FastAPI project:
+
+Plaintext
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Environment Variables / Secrets ---
+.env
+.flaskenv
+*.env
+.env.*
+
+# --- Unit Testing / Coverage ---
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Docker ---
+# Only ignore if you want to keep local data separate
+.dockerignore
